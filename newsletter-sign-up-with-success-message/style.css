@@ -1,0 +1,109 @@
+@font-face {font-family: Roboto; font-weight: 400; src: url(assets/fonts/Roboto-Regular.ttf);}
+@font-face {font-family: Roboto; font-weight: 700; src: url(assets/fonts/Roboto-Bold.ttf);}
+* {
+    font-family: Roboto;
+    color: hsl(234, 29%, 20%);
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.newsletter-popup {
+    max-width: 100%;
+    width: 56rem;
+
+    margin: 0 auto;
+    padding: 1.5rem;
+
+    background-color: white;
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.5));
+    border-radius: 2rem;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    width: 24rem;
+    height:max-content;
+
+    margin: 3rem auto;
+}
+.image-block {
+    float: right;
+    display: flex;
+}
+
+.under-heading {
+    margin-block: 1.5rem;
+}
+.list {
+    line-height: 1.6;
+}
+.list-element {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.list-element > img {
+    margin-right: 1rem;
+}
+.email {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+.email-text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 3;
+    margin-left: 2px;
+}
+
+#email-input, #subscribe {
+    box-sizing: border-box;
+    height: 3.5rem;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+#email-input {
+    border: 1px solid hsl(231, 7%, 60%);
+    color: hsl(234, 29%, 20%);
+}
+#email-input:focus {
+    border: 1px solid hsl(234, 29%, 20%);
+    outline: none;
+}
+#subscribe {
+    transition: scale 0.1s ease;
+    border: none;
+    bottom: 0;
+    background: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+}
+#subscribe:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, #ff537b, #ff693d);
+    filter: drop-shadow(0 0.5rem 12px hsla(4, 100%, 67%, 0.5));
+}
+#subscribe:active {
+    scale: 0.95;
+}
