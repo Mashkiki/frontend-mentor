@@ -1,0 +1,250 @@
+@font-face {
+    font-family: Roboto;
+    font-weight: 400;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+
+* {
+    font-family: Roboto;
+    color: hsl(234, 29%, 20%);
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+html {
+    height: 100vh;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+
+#newsletterPopup {
+    transition: opacity 0.3s ease;
+    max-width: 100%;
+    width: 56rem;
+
+    margin: 0 auto;
+    padding: 1.5rem;
+
+    background-color: white;
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.5));
+    border-radius: 2rem;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    width: 24rem;
+    height: max-content;
+
+    margin: 3rem auto;
+}
+
+.image-block {
+    float: right;
+    display: flex;
+}
+
+.under-heading {
+    margin-block: 1.5rem;
+}
+
+.list {
+    line-height: 1.6;
+}
+
+.list-element {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.list-element>img {
+    margin-right: 1rem;
+}
+
+#newsletterSubscribe {
+    margin-top: 3rem;
+}
+
+.email-text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 3;
+    margin-left: 2px;
+}
+
+#invalidEmail {
+    transition: all 0.16s ease;
+    float: right;
+    margin-inline: 0 2px;
+    color: hsl(4, 100%, 67%);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#emailInput,
+.btn {
+    box-sizing: border-box;
+    height: 3.5rem;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#emailInput {
+    transition: all 0.16s ease;
+    border: 1px solid hsl(231, 7%, 60%);
+    color: hsl(234, 29%, 20%);
+}
+
+#emailInput:focus {
+    border: 1px solid hsl(234, 29%, 20%);
+    outline: none;
+}
+
+.wrongEmail {
+    border: 1px solid hsl(4, 100%, 67%) !important;
+    color: hsl(4, 100%, 67%) !important;
+    background-color: hsla(4, 100%, 67%, 0.15);
+}
+
+.correctEmail {
+    border: 1px solid hsl(135, 80%, 72%) !important;
+    color: hsl(135, 80%, 72%) !important;
+    background-color: hsla(135, 80%, 72%, 0.15);
+}
+
+.btn {
+    transition: scale 0.1s ease;
+    border: none;
+    margin-top: 1.5rem;
+    background: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, #ff537b, #ff693d);
+    filter: drop-shadow(0 0.5rem 12px hsla(4, 100%, 67%, 0.5));
+}
+
+.btn:active {
+    scale: 0.95;
+}
+
+#newsletterSuccess {
+    transition: opacity 0.3s ease;
+    max-width: 100%;
+    width: 24rem;
+    max-height: 100%;
+    height: 24rem;
+
+    margin: 0 auto;
+    padding: 3rem;
+
+    background-color: white;
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.5));
+    border-radius: 2rem;
+}
+.success-icon {
+    margin-bottom: 1rem;
+}
+
+#successEmail {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        line-height: 1;
+        margin-block: 1rem;
+    }
+
+    #newsletterPopup {
+        border-radius: 0;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .image-block {
+        display: block;
+        width: 100%;
+    }
+    .image-block>img {
+        display: block;
+        content: url(assets/images/illustration-sign-up-mobile.svg);
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .main-block {
+        padding-inline: 1rem;
+        margin: 0;
+        max-width: 100%;
+        width: fit-content;
+    }
+
+    #newsletterSubscribe {
+        margin-top: 1rem;
+    }
+    .btn {
+        margin-top: 0.5rem;
+    }
+
+    #newsletterSuccess {
+        border-radius: 0;
+        padding: 0;
+        padding-inline: 1rem;
+        max-height: 100%;
+        height: 100dvh;
+    }
+    .success-icon {
+        margin-top: 33%;
+    }
+    .dismiss-btn {
+        position: absolute;
+        left: 1rem; bottom: 3rem;
+        width: calc(100% - 2rem);
+    }
+
+    .attribution {
+        padding: 0;
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-height: 786px) {
+    #newsletterPopup {
+        height: fit-content;
+        padding-bottom: 2rem;
+    }
+}
