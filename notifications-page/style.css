@@ -108,3 +108,14 @@ header {
 .rounded {
     border-radius: 8px;
 }
+
+@media only screen and (max-width: 800px) {
+    main {
+        border-radius: 0;
+        padding-inline: 1rem;
+    }
+    .attribution {
+        padding: 0;
+        height: 1rem;
+    }
+}
