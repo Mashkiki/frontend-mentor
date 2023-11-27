@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+* {
+    font-family: Plus Jakarta Sans;
+    line-height: 1.4;
+    font-size: 16px;
+    margin: 0; padding: 0;
+
+    font-weight: 500;
+}
+html {font-size: 16px;}
+body {
+    display: flex;
+    background-color: hsl(210, 60%, 98%);
+    color: hsl(219, 12%, 42%);
+    place-items: center;
+    min-height: 100vh;
+}
+h1 {
+    font-size: 24px;
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+}
+
+main {
+    background-color: white;
+    border-radius: 1rem;
+    filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.1));
+    margin: 0 auto;
+    max-width: 100%;
+    width: 41rem;
+    padding-inline: 2rem;
+}
+header {
+    display: flex;
+    align-items: center;
+    height: 6rem;
+}
+#notificationCount {
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    padding-inline: 0.75em; padding-bottom: 0.1em;
+    margin-inline: 1rem;
+}
+#markAll {
+    margin-left: auto;
+    user-select: none;
+}
+#markAll:hover {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+
+.notif {
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+
+}
+.inline {
+    display: inline;
+}
+.unread {
+    background-color: hsl(210, 60%, 98%);
+}
+.dot {
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    width: 8px; height: 8px;
+    margin-left: 4px; margin-bottom: 2px;
+}
+.prof-pic {
+    height: 3rem;
+    margin-right: 1rem;
+} .prof-pic:hover {cursor: pointer;}
+.pic {
+    position: absolute;
+    height: 3rem;
+    right: 3rem;
+}
+.name {
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+    margin-right: 0.25rem;
+} .name:hover {cursor: pointer; color: hsl(219, 85%, 26%);}
+.when {
+    color: hsl(219, 14%, 63%);
+}
+
+.group {
+    margin-left: 0.25rem;
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+} .group:hover {cursor: pointer;}
+.post {
+    margin-left: 0.25rem;
+    font-weight: 800;
+} .post:hover {cursor: pointer; color: hsl(219, 85%, 26%);}
+.message {
+    border: 1px solid hsl(211, 68%, 94%);
+    margin-left: 5rem;
+}
+.message>p {
+    margin: 1rem;
+}
+
+.rounded {
+    border-radius: 8px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      background-color: hsl(0, 0%, 100%);
+      color: black;
+      font-size: 0.75rem;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding-block: 0.5rem;
+      filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.1));
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <header>
+      <h1>Notifications</h1>
+      <span id="notificationCount" class="rounded">3</span>
+      <div id="markAll">Mark all as read</div>
+    </header>
+    <section id="notifications">
+      <div class="notif unread rounded">
+        <img src="assets/images/avatar-mark-webber.webp" alt="pfp" class="prof-pic">
+        <div>
+          <div class="inline">
+            <span class="name">Mark Webber</span>
+            <span>reacted to your recent post</span>
+            <span class="post">My first tournament today!</span>
+            <div class="dot" style="display: inline-block;"></div>
+          </div>
+          <div class="when">1m ago</div>
+        </div>
+      </div>
+      <div class="notif unread rounded">
+        <img src="assets/images/avatar-angela-gray.webp" alt="pfp" class="prof-pic">
+        <div>
+          <div class="inline">
+            <span class="name">Angela Gray</span>
+            <span>followed you</span>
+            <div class="dot" style="display: inline-block;"></div>
+          </div>
+          <div class="when">1m ago</div>
+        </div>
+      </div>
+      <div class="notif unread rounded">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="pfp" class="prof-pic">
+        <div>
+          <div class="inline">
+            <span class="name">Jacob Thompson</span>
+            <span>has joined your group</span>
+            <span class="group">Chess Club</span>
+            <div class="dot" style="display: inline-block;"></div>
+          </div>
+          <div class="when">1 day ago</div>
+        </div>
+      </div>
+      <div class="notif rounded">
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="pfp" class="prof-pic">
+        <div>
+          <div class="inline">
+            <span class="name">Rizky Hasanuddin</span>
+            <span>sent you a private message</span>
+          </div>
+          <div class="when">5 days ago</div>
+        </div>
+      </div>
+      <div class="message rounded"><p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+        I'm already having lots of fun and improving my game.</p></div>
+      <div class="notif rounded">
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="pfp" class="prof-pic">
+        <div>
+          <div class="inline">
+            <span class="name">Kimberly Smith</span>
+            <span>commented on your picture</span>
+            <img src="assets/images/image-chess.webp" alt="" class="pic">
+          </div>
+          <div class="when">1 week ago</div>
+        </div>
+      </div>
+      <div class="notif rounded">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="pfp" class="prof-pic">
+        <div>
+          <div class="inline">
+            <span class="name">Nathan Peterson</span>
+            <span>reacted to your recent post</span>
+            <span class="post">5 end-game strategies to increase your win rate</span>
+          </div>
+          <div class="when">2 weeks ago</div>
+        </div>
+      </div>
+      <div class="notif rounded">
+        <img src="assets/images/avatar-anna-kim.webp" alt="pfp" class="prof-pic">
+        <div>
+          <div class="inline">
+            <span class="name">Anna Kim</span>
+            <span>left the group</span>
+            <span class="group">Chess Club</span>
+          </div>
+          <div class="when">2 weeks ago</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Mashkiki">Mashkiki</a>.
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
